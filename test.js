@@ -1,14 +1,12 @@
-var word = "bottles";
-var count = 99;
-while (count > 0) {
-	console.log(count + " " + word + " of beer on the wall");
-	console.log(count + " " + word + " of beer,");
-	console.log("Take one down, pass it aroung,");
-	count--;
+var arr = [2, 4, 8, 16, 32];
+// var sum = 0;
 
-	if (count > 0) {
-		console.log(count + " " + word + " of beer on the wall.");
-	} else {
-		console.log("No more " + word + " of beer on the wall.");	
-}
-}
+// arr.forEach(elem => sum += elem)
+
+// console.log(sum)
+
+// console.log(arr.join(' + ') + ' = 62')
+
+let total = arr.reduce ((acc, elem) => { console.log('аккумулятор: ' + acc); console.log('элемент: ' + elem); return "sdff", (acc + elem) })
+
+console.log(total)
