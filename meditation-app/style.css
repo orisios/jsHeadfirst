@@ -28,7 +28,7 @@
     height: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-90deg);
     pointer-events: none;
 }
 .time-display {
@@ -61,4 +61,28 @@ video {
     border: 2px solid white;
     cursor: pointer;
     border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+.time-select button:hover {
+    color: black;
+    background: white;
+}
+
+.sound-picker button {
+    border: none;
+    height: 120px;
+    width: 120px;
+    padding: 30px;
+    border-radius: 50%;
+}
+.sound-picker button:nth-child(1) {
+    background: #4972a1;
+}
+.sound-picker button:nth-child(2) {
+    background: #a14f49;
+}
+.sound-picker button img {
+    height: 100%;
 }
